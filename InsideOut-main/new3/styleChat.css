@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #d0c4b6;
+}
+
+/* nav-bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px;
+  align-items: center;
+}
+.chat {
+  background: #646a4e;
+
+  border-radius: 8px;
+  width: 190px;
+  height: 61px;
+  font-family: "Sofia Sans Condensed";
+  font-size: 40px;
+}
+
+.tabs a {
+  color: #d0c4b6;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.tabs {
+  font-family: "Sofia Sans Condensed";
+  font-style: normal;
+
+  font-size: 40px;
+}
+
+.nav-bar a {
+  color: #646a4e;
+  text-decoration: none;
+}
+/* nav-bar complete */
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.content h1 {
+  margin-top: 30px;
+  margin-left: 190px;
+}
+.bot {
+  width: 677px;
+  height: 500px;
+  background: #646a4e;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  color: white;
+}
+
+.anychat {
+  width: 677px;
+  height: 500px;
+  border-radius: 50px;
+  background: #4a2c59;
+  color: white;
+}
+
+.image {
+  margin-left: 120px;
+  border-radius: 9px;
+}
+
+.notseen {
+    display: none;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  background-color: #d0c4b6;
+  top: 90px;
+  right: 90px;
+}
+
+.head {
+  height: 118px;
+  display: flex;
+  align-items: center;
+  background-color: #646a4e;
+  font-family: "Sofia Sans Condensed";
+  font-style: normal;
+  font-weight: 500;
+  color: #ffff;
+  justify-content: center;
+}
+.head img {
+  width: 226px;
+  height: 98px;
+}
+
+.textbox{
+    margin-right: 60px;
+}
+
+
+.notseen button{
+    margin-top: 100px;
+    margin-left: 170px;
+    background: #E2AA6F;
+    border-radius: 50px;
+    width: 225px;
+    height: 58px;
+    color: #646A4E;
+    font-weight: 800;
+    font-size: 28px;
+}

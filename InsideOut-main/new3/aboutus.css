@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #d0c4b6;
+}
+
+/* nav-bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px;
+  align-items: center;
+}
+.chat {
+  background: #646a4e;
+  color: #d0c4b6;
+  border-radius: 8px;
+  width: 190px;
+  height: 61px;
+  font-family: "Sofia Sans Condensed";
+  font-size: 40px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.tabs {
+  font-family: "Sofia Sans Condensed";
+  font-style: normal;
+
+  font-size: 40px;
+}
+
+.nav-bar a {
+  color: #646a4e;
+  text-decoration: none;
+}
+/* nav-bar complete */
+
+/* About-Section */
+.about-section1 {
+  background: #b07041; /* Adjust color to match the background */
+  padding: 20px;
+  border-radius: 35px; /* Rounded corners */
+  color: #ffffff; /* Text color */
+  font-family: "Sofia Sans Condensed", sans-serif;
+  display: inline-block;
+  height: 70vh;
+  width: 35vw;
+  position: relative;
+  margin: 0px 0px 0px 210px;
+  z-index: -20px;
+}
+
+.about-title {
+  color: #ffffff; /* Adjust to match the title's text color */
+  font-size: 60px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20px; /* Slightly overlaps the section */
+  left: 10px;
+}
+
+.about-section1 img {
+  position: absolute;
+  height: 150px;
+  width: 290px;
+  top: 60px;
+  left: 130px;
+}
+
+.about-text {
+  margin-top: 25px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.about-section2 {
+  background-color: rgb(81, 84, 62);
+  padding: 20px;
+  border-radius: 35px; /* Rounded corners */
+  color: #ffffff; /* Text color */
+  font-family: "Sofia Sans Condensed", sans-serif;
+  display: inline-block;
+  height: 70vh;
+  width: 35vw;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+}
+
+.about-section2 p {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.about-section2 img {
+  height: 300px;
+  position: absolute;
+  left: 60px;
+  
+}

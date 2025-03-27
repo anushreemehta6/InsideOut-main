@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - InsideOut</title>
+    <link rel="stylesheet" href="Sign-In.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Google Sign-In API -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="first.html"><img src="icon.png" alt="InsideOut Logo"></a>
+    </nav>
+    <div class="box">
+      <div class="gradient-box">
+        <img src="Group 2.png" alt="Decoration" width="500px" height="500px">
+      </div>
+
+      <div class="Sign-In">
+        <h1>Create Account</h1>
+        <div class="form-container">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="fullName" placeholder="Full Name" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email Address" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+          </div>
+        </div>
+
+        <button class="sign-up-button" id="signUpBtn">Sign Up</button>
+        
+        <div class="divider">
+          <span>or</span>
+        </div>
+
+        <div class="google-sign-in">
+          <div id="g_id_onload"
+               data-client_id="YOUR_GOOGLE_CLIENT_ID"
+               data-callback="handleCredentialResponse">
+          </div>
+          <div class="g_id_signin" data-type="standard"></div>
+        </div>
+
+        <p class="login-link">Already have an account? <a href="#" id="loginLink">Login</a></p>
+      </div>
+    </div>
+
+    <script>
+      // Handle Google Sign-In response
+      function handleCredentialResponse(response) {
+        // Send the token to your server
+        console.log("Encoded JWT ID token: " + response.credential);
+        // Here you would typically send this token to your backend for verification
+      }
+
+      // Handle regular sign-up
+      document.getElementById('signUpBtn').addEventListener('click', function() {
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (password !== confirmPassword) {
+          alert("Passwords don't match!");
+          return;
+        }
+
+        // Here you would typically send this data to your backend
+        console.log("Sign up data:", { fullName, email, password });
+      });
+
+      // Handle login link click
+      document.getElementById('loginLink').addEventListener('click', function(e) {
+        e.preventDefault();
+        // Here you would typically redirect to your login page
+        alert("Login functionality coming soon!");
+      });
+    </script>
+  </body>
+</html>

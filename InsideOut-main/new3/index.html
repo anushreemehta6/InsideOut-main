@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InsideOut - Your AI Chat Assistant">
+  <meta name="keywords" content="AI chat, mental health, support, counseling">
+  <title>InsideOut - AI Chat Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="nav-bar">
+      <img src="logo.png" alt="InsideOut Logo" class="logo" />
+      <a href="first.html" class="tabs" aria-label="Home">Home</a>
+      <a href="aboutus.html" class="tabs" aria-label="About Us">About us</a>
+      <a href="serve.html" class="tabs" aria-label="Our Services">What we serve</a>
+      <a href="contact.html" class="tabs" aria-label="Contact">Contact us</a>
+      <a href="Sign-In.html" class="tabs" aria-label="Sign In">Sign In</a>
+      <button class="chat" aria-label="Start Chat"><a href="chat.html">CHAT NOW</a></button>
+    </nav>
+  </header>
+
+  <!-- Main Chat Section -->
+  <main id="app">
+    <h1>InsideOut</h1>
+    <div id="chatContainer" role="log" aria-label="Chat messages"></div>
+    <div class="input-container">
+      <textarea 
+        id="questionInput" 
+        placeholder="Type your question here..." 
+        aria-label="Question input"
+        rows="4"
+      ></textarea>
+      <button id="generateAnswerBtn" aria-label="Send message">Send</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
